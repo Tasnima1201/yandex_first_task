@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Расписание</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1">
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="course picked">
+		<div class="course_title"><p>Школа разработки интерфейсов</p></div>
+		<div class="schedule">
+			<ul class="month march">
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+							<p>20 марта</p>
+							<p>19:00</p>				
+						</div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Лекция 1. Адаптивная верстка</p>
+						<div><p class='lecturer' data-info="Лектор 1. Учился в школе разработки интерфейсов, теперь работает в отделе разработки Яндексе">Дмитрий Душкин</p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+
+					</div>
+				</li>
+
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+							<p>27 марта</p>
+							<p>19:00</p>
+						</div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info ">
+						<p class="lect_title">Лекция 2. Работа с сенсорным пользовательским вводом</p>
+						<div><p class='lecturer' data-info="Лектор 1. Учился в школе разработки интерфейсов, теперь работает в отделе разработки Яндексе">Дмитрий Душкин </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="month april">
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>3 апреля</p>
+						<p>19:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Лекция 3. Мультимедиа: возможности браузера</p>
+						<div><p class='lecturer' data-info="Лектор2">Максим Васильев </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>10 апреля</p>
+						<p>19:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Лекция 4. Нативные приложения на веб-технологиях</p>
+						<div><p class='lecturer' data-info="Лектор3">Сергей Бережной </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+
+				<li class="lecture join_lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>11 апреля</p>
+						<p>15:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">	Выступление гостей</p>
+						<div>
+							<p class='lecturer' data-info="Лектор12">Сергей Калабин </p>
+							<p class="lect_from">Яндекс</p>
+							<p class='lecturer' data-info="Лектор13">Николай Васюнин </p>
+							<p class="lect_from">Яндекс</p>
+							<a href="#"><img src="download.png" class="download"></a>
+						
+						</div>
+						<p>Совместно с ШМР и ШМД</p>
+					</div>
+				</li>
+			</ul>
+			<ul class="month may">
+				<li class="lecture ">
+					<div class="time_place">
+						<div class="date">
+						<p>1 мая</p>
+						<p>19:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Лекция 4. Инфраструктура веб-проектов</p>
+						<div><p class='lecturer' data-info="Лектор4">Прокопюк Андрей </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+
+				<li class="lecture join_lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>5 мая</p>
+						<p>16:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Этапы создания проектов</p>
+						<div>
+							<p class='lecturer' data-info="Лектор12">Прокопюк Андрей </p>
+							<p class="lect_from">Яндекс</p>
+							<a href="#"><img src="download.png" class="download"></a>						
+						</div>
+						<p>Совместно с ШМР и ШМД</p>
+					</div>
+				</li>
+
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>13 мая</p>
+						<p>19:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Лекция 5. Инструменты разработки мобильного фронтенда</p>
+						<div><p class='lecturer' data-info="Лектор2">Максим Васильев </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+
+	<div class="course">
+		<div class="course_title"><p>Школа мобильной разработки</p></div>
+		<div class="schedule">
+			<ul class="month march">
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>19 марта</p>
+						<p>18:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Лекция 1. Java Blitz (Часть 1)</p>
+						<div><p class='lecturer' data-info="Лектор5">Эдуард Мацуков </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+						<p class="lect_title">Лекция 2. Git & Workflow</p>
+						<div><p class='lecturer' data-info="Лектор6">Дмитрий Складнов </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>25 марта</p>
+						<p>18:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Лекция 3. Java Blitz (Часть 2)</p>
+						<div><p class='lecturer' data-info="Лектор5">Эдуард Мацуков </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+						<p class="lect_title">Лекция 4. MyFirstApp (Часть 1)</p>
+						<div><p class='lecturer' data-info="Лектор7">Роман Григорьев </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="month april">
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>2 апреля</p>
+						<p>18:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Лекция 5. MyFirstApp (Часть 2)</p>
+						<div><p class='lecturer' data-info="Лектор5">Эдуард Мацуков </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+						<p class="lect_title">Лекция 6. ViewGroup</p>
+						<div><p class='lecturer' data-info="Лектор7">Роман Григорьев </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+
+				<li class="lecture join_lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>11 апреля</p>
+						<p>15:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">	Выступление гостей</p>
+						<div>
+							<p class='lecturer' data-info="Лектор12">Сергей Калабин </p>
+							<p class="lect_from">Яндекс</p>
+							<p class='lecturer' data-info="Лектор13">Николай Васюнин </p>
+							<p class="lect_from">Яндекс</p>
+							<a href="#"><img src="download.png" class="download"></a>						
+						</div>
+						<p>Совместно с ШМР и ШМД</p>
+					</div>
+				</li>
+			</ul>
+			<ul class="month may">
+				<li class="lecture join_lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>5 мая</p>
+						<p>16:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Этапы создания проектов</p>
+						<div>
+							<p class='lecturer' data-info="Лектор12">Прокопюк Андрей </p>
+							<p class="lect_from">Яндекс</p>
+							<a href="#"><img src="download.png" class="download"></a>						
+						</div>
+						<p>Совместно с ШМР и ШМД</p>
+					</div>
+				</li>
+
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>17 мая</p>
+						<p>18:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Лекция 15. MVP&Co</p>
+						<div><p class='lecturer' data-info="Лектор8">Дмитрий Попов </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+						<p class="lect_title">Лекция 16. Debugging & Polishing</p>
+						<div><p class='lecturer' data-info="Лектор9">Илья Сергеев </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+		
+	<div class="course">
+		<div class="course_title"><p>Школа мобильного дизайна</p></div>
+		<div class="schedule">
+			<ul class="month march">
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>17 марта</p>
+						<p>16:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">	Лекция 1. Идея, исследование, концепт (Часть 1)</p>
+						<div><p class='lecturer' data-info="Лектор10">Антон Тен </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+						<p class="lect_title">	Лекция 2. Идея, исследование, концепт (Часть 2)</p>
+						<div><p class='lecturer' data-info="Лектор10">Антон Тен </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>24 марта</p>
+						<p>16:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">	Лекция 3. Особенности проектирования мобильных интерфейсов</p>
+						<div><p class='lecturer' data-info="Лектор11">Николай Васюнин </p> 
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+			
+					</div>
+				</li>
+			</ul>
+			<ul class="month april">
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>2 апреля</p>
+						<p>18:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">	Лекция 4. Продукт и платформа</p>
+						<div><p class='lecturer' data-info="Лектор12">Сергей Калабин </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+						<p class="lect_title">	Лекция 5. Природа операционных систем</p>
+						<div><p class='lecturer' data-info="Лектор13">Николай Васюнин </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+
+				<li class="lecture join_lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>11 апреля</p>
+						<p>15:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">	Выступление гостей</p>
+						<div>
+							<p class='lecturer' data-info="Лектор12">Сергей Калабин </p>
+							<p class="lect_from">Яндекс</p>
+							<p class='lecturer' data-info="Лектор13">Николай Васюнин </p>
+							<p class="lect_from">Яндекс</p>
+							<a href="#"><img src="download.png" class="download"></a>
+						
+						</div>
+						<p>Совместно с ШМР и ШМД</p>
+					</div>
+				</li>
+			</ul>
+			<ul class="month may">
+				<li class="lecture join_lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>5 мая</p>
+						<p>16:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Этапы создания проектов</p>
+						<div>
+							<p class='lecturer' data-info="Лектор12">Прокопюк Андрей </p>
+							<p class="lect_from">Яндекс</p>
+							<a href="#"><img src="download.png" class="download"></a>						
+						</div>
+						<p>Совместно с ШМР и ШМД</p>
+					</div>
+				</li>
+
+				<li class="lecture">
+					<div class="time_place">
+						<div class="date">
+						<p>10 мая</p>
+						<p>18:00</p></div>
+						<div class="classroom">
+							<p>Белый кит<p>
+						</div>
+					</div>
+					<div class="lect_info">
+						<p class="lect_title">Лекция 11. Работа в команде</p>
+						<div><p class='lecturer' data-info="Лектор14">Юрий Подорожный </p>
+						<p class="lect_from">Яндекс</p>
+						<a href="#"><img src="download.png" class="download"></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+
+		</div>
+		
+		</div>
+	</div>
+
+
+</div>
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

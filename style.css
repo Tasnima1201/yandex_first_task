@@ -1,0 +1,178 @@
+body{
+	background-color:rgba(162,171,174,0.9);
+}
+
+.wrapper{
+	width:88%;
+	margin:50px auto;
+	font-size: 18px;
+	color:black;
+	display:flex; 
+	/*flex-wrap: wrap;*/	
+}
+
+.course{
+	width:17%;	
+	background-color: white;
+	border-right:1px solid rgba(162,171,174,0.9);
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);	
+
+}
+
+.course_title{
+	padding:10px;
+	height:80px;
+	margin:0 auto;
+	text-align: center;
+	font-size:22px;
+	color:rgb(255,242,0);
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.6);
+}
+.course .picked{
+	/*min-width:380px;*/
+}
+
+.schedule{	
+	padding:15px 5%;
+	margin-top:0;
+}
+
+.month{ 
+	border-bottom: 1px dashed rgb(255,242,0); 
+	list-style:none;
+	padding-left:0;
+}
+
+.lecture{
+	display:flex;
+	flex-direction: row;
+	margin:10px;	
+	justify-content: space-between;
+}
+
+.time_place{
+	margin:0 auto;
+}
+
+.lect_info{ 
+	display:none; 
+	color:rgba(80,80,80,1);
+}
+
+.lecture p{ margin:10px; }
+
+.lect_from{
+	color:rgba(80,80,80,0.5);
+	margin:0 5%;/**/
+}
+
+/*.lect_about{
+	position:fixed;
+	padding:10px 20px;
+	max-width:400px;
+	border: 1px solid #b3c9ce;
+	border-radius: 4px;
+    text-align: center;
+    font: italic 14px/1.3 arial, sans-serif;
+    color: #333;
+    background: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}*/
+
+
+
+
+.picked{ width:65%;}
+
+.picked .lect_info{
+	display:flex;
+	flex-direction:column;
+	width:70%;
+}
+
+.picked .time_place{ 
+	width:20%;
+	margin:0;
+	flex-basis:140px;
+}
+
+.picked .lect_info div{
+	display: flex;
+	flex-direction: row;
+}
+
+.join_lecture .time_place{
+	border-left:4px solid rgb(255,242,0);
+}
+
+.lect_title{
+	color:black; 
+}
+
+.download{
+	width:30px;
+	height:30px;
+	margin:10px;
+	display:none;
+}
+
+
+
+
+@media (max-width: 1023px){
+	.wrapper{
+		
+		flex-direction: column;	
+	}
+	
+	.course_title{
+		height:60px;
+	}
+	
+	
+	.schedule{
+		display: none;
+	}
+
+	.course {
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.picked .schedule {
+		display:block;
+	}
+
+}
+
+@media (max-width: 700px){
+	.lect_from{
+			display:none;
+		}
+}
+
+@media (max-width: 500px){
+	.picked .time_place{
+		flex-basis: auto;
+	}
+}
+
+@media (max-width: 400px){
+	.wrapper{
+		font-size:16px;
+	}
+	.course_title{
+		font-size:18px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
